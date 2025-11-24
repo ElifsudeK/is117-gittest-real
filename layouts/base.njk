@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ title }}</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body{% if bodyClass %} class="{{ bodyClass }}"{% endif %}>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="/">Humanist Modernism</a>
+      <nav aria-label="Primary navigation">
+        <ul class="nav">
+          <li><a class="nav-btn" href="/">Home</a></li>
+          <li><a class="nav-btn" href="/about/">About</a></li>
+          <li><a class="nav-btn" href="/designers/">Designers</a></li>
+          <li><a class="nav-btn" href="/timeline/">Timeline</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Made with care • Humanist Modernism • <a href="/designers/">Designers</a> • <a href="/timeline/">Timeline</a></p>
+    </div>
+  </footer>
+</body>
+</html>
