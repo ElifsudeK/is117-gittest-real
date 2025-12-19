@@ -1,1 +1,2 @@
+This repo was scaffolded by GitHub Copilot (GPT-5 mini) for the IS117 assignment.
 Starting test

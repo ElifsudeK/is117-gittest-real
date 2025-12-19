@@ -1,0 +1,179 @@
+The result must feel premium, intentional, and not boring (avoid “empty white pages”). Nordic minimalism is the vibe, but do not overdo whitespace—pages must have real content, visuals, and interactive elements.
+
+1) Goals & Quality Bar (must follow)
+
+Style: Nordic minimalism + warm humanist modernism (calm, refined, editorial).
+
+Avoid “cheap template” look: no default form inputs, no plain blue links, no raw unstyled dropdowns.
+
+No huge empty whitespace blocks with nothing happening. Balance breathing room with content density.
+
+Strong visual hierarchy: headings, subheadings, body text, clear sections.
+
+Consistency across pages: spacing, typography, buttons, cards, forms, navigation, footer.
+
+2) Pages & Required Content
+
+Create these routes (and nav links):
+
+/ Home (overview landing)
+
+/portfolio/ Case Studies index + filter
+
+/portfolio/case-1/, /portfolio/case-2/, /portfolio/case-3/ (detail pages)
+
+/design_style/ Design Style hub (overview)
+Subpages: /design_style/history/, /design_style/principles/, /design_style/examples/, /design_style/palette-type/, /design_style/layout-spacing/, /design_style/references/
+
+/client_site/ A “client example” mini-site called NordFrame Studio (homepage)
+Subpages: /client_site/services/, /client_site/gallery/, /client_site/book/, /client_site/contact/
+
+Home page requirements
+
+Hero with a strong headline, a short value proposition, and 2 CTAs: “View Work” + “Book a Call”.
+
+“What I Do” section with 4 cards (AI Automation, Customer Ops, Analytics, Integration).
+
+“Choose Your Path” section with 3 cards linking to Portfolio / Design Style / Client Site.
+
+Social proof: logos row or testimonials (at least 3).
+
+A short “About” teaser with a portrait image + link to Portfolio.
+
+Footer with nav + email + short copyright.
+
+Portfolio index requirements
+
+A clear intro and a styled filter (not a default ugly dropdown).
+
+Show case study cards (at least 6 cards total). Each card must include:
+
+title, 1-line outcome metric, tags, and an image.
+
+Cards must be aligned and responsive; no awkward spacing or misalignment.
+
+Case study detail page requirements
+
+For each of 3 case pages include:
+
+Hero section with title + subtitle + tags + cover image.
+
+Problem / Approach / Solution / Results sections.
+
+Results must include at least 3 metrics shown in a styled KPI row.
+
+Add a “Tech Stack” block and “Timeline” block.
+
+Add a CTA at bottom: “Request a similar system”.
+
+Design Style hub + subpages
+
+The hub must have a structured “Explore” grid linking to subpages.
+
+Subpages must not look empty:
+
+History: timeline component (expand/collapse is ok) with visuals.
+
+Principles: principle cards + a short interactive quiz (5 questions).
+
+Examples: gallery of example layouts with captions.
+
+Palette & Type: show palette swatches + typography scale preview.
+
+Layout & Spacing: show spacing system + sample section compositions.
+
+References: curated list with short notes and thumbnails.
+
+Client Site (NordFrame Studio) requirements
+
+This is a “premium photography studio” mini-site inside the project:
+
+Consistent branding across its pages (logo wordmark, nav, footer).
+
+Home: hero + featured gallery + services highlight + testimonials.
+
+Services: pricing cards, add-ons, FAQ accordion.
+
+Gallery: grid with filters and lightbox modal.
+
+Book: a “Book Your Session” page with a polished form, package selection, and confirmation UI.
+
+Contact: polished form + contact details + map placeholder (image).
+
+3) IMAGES (mandatory, no blank placeholders)
+
+Every image slot must display a real image (no empty boxes with “Project Image” text).
+
+Use local images if available; otherwise add a /assets/images/ folder and include at least 12 images.
+
+You may use free stock images (e.g., Unsplash-style) but store them locally in the repo.
+
+Add meaningful alt text for every image.
+
+Ensure consistent aspect ratios for cards (no stretched images).
+
+4) Interactions (must include)
+
+Sticky top navigation with active link styling.
+
+Smooth scrolling where appropriate.
+
+Portfolio filtering (by tag) that feels polished.
+
+Lightbox modal for gallery images (client site + design examples).
+
+Quiz component on Principles page with score + feedback.
+
+Forms: styled inputs, validation states, success confirmation message.
+
+“Book a Call” floating button is okay, but it must not feel gimmicky:
+
+Fix its position, size, and visual weight so it doesn’t look cheap.
+
+5) UI System (global CSS requirements)
+
+Create a cohesive design system in styles.css:
+
+Typography: elegant serif for headings + clean sans for body (use web-safe or simple @import).
+
+Define spacing scale, max-width containers, section padding, consistent gaps.
+
+Buttons: primary/secondary/ghost; hover/focus states; accessible contrast.
+
+Forms: custom input styles, focus ring, error/success states.
+
+Cards: subtle borders, soft shadows, consistent radius.
+
+Links: styled, no default blue underlines.
+
+Remove any visible front-matter text from rendering (e.g., lines like --- layout: ... --- must never appear on the page).
+
+6) Technical Requirements (11ty)
+
+Use Nunjucks layouts and partials:
+
+layouts/base.njk, header, footer, reusable components.
+
+Use data files for:
+
+case studies list, services/pricing, testimonials, navigation.
+
+Ensure build works with:
+
+npm install
+
+npm run build
+
+npm start (must serve and show a clickable localhost URL)
+
+Fix any routing issues and ensure all nav links work.
+
+7) Final check (must do)
+
+Audit the site for “cheap/unfinished” sections and improve them.
+
+Make spacing feel intentional; reduce excessive whitespace where it looks empty.
+
+Ensure everything is responsive on mobile/tablet/desktop.
+
+Ensure no broken images, no placeholder copy like “Lorem ipsum”, no unstyled default UI.

@@ -1,3 +1,26 @@
+# Professional Web Portfolio System (Eleventy)
+
+This repository is a production-ready Eleventy (11ty) project built around a clean, Nordic-minimal aesthetic. The site is intended for GitHub Pages and outputs to `docs/`.
+
+Quick commands
+
+```
+npm install
+npm run start   # local dev with eleventy --serve
+npm run build   # build static files into docs/
+```
+
+Structure
+
+- `src/` — Eleventy source files
+- `src/_includes/` — layouts and partials
+- `src/assets/` — css, js, images (copied to `docs/assets/`)
+- `docs/` — generated site (for GitHub Pages)
+
+Notes
+
+- The site is intentionally lightweight: minimal JS, semantic HTML, accessible components, and reduced-motion support.
+- Where third-party embeds are required (Calendly, Analytics, Zapier), the code is present as commented placeholders with instructions.
 # Git Test - 30 Minutes
 
 ## IMPORTANT: Enable GitHub Actions First!
